@@ -6,16 +6,17 @@
 /*   By: pvong <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/01 14:01:02 by pvong             #+#    #+#             */
-/*   Updated: 2023/12/01 17:20:04 by pvong            ###   ########.fr       */
+/*   Updated: 2023/12/04 16:37:30 by pvong            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef SCALARCONVERTER_HPP
 #define SCALARCONVERTER_HPP
 
-#include <string>
 #include <iostream>
+#include <limits>
 #include <sstream>
+#include <string>
 
 #ifndef SHOWMSG
 #define SHOWMSG 1
@@ -50,7 +51,7 @@
 #endif
 
 class ScalarConverter {
-    
+
 public:
     ~ScalarConverter(void);
 
@@ -61,8 +62,6 @@ private:
     ScalarConverter(const ScalarConverter &src);
     ScalarConverter &operator=(const ScalarConverter &other);
     void convertToChar(const std::string &strToConvert);
-
 };
-
 
 #endif

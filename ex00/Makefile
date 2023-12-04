@@ -6,11 +6,11 @@
 #    By: pvong <marvin@42lausanne.ch>               +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/12/01 15:07:06 by pvong             #+#    #+#              #
-#    Updated: 2023/12/01 15:07:11 by pvong            ###   ########.fr        #
+#    Updated: 2023/12/04 13:42:12 by pvong            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = ScalarConverter
+NAME = scalarConverter
 
 # Compilation 
 CXX = g++
