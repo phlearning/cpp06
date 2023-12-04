@@ -6,7 +6,7 @@
 /*   By: pvong <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/01 14:19:34 by pvong             #+#    #+#             */
-/*   Updated: 2023/12/04 16:48:17 by pvong            ###   ########.fr       */
+/*   Updated: 2023/12/04 16:51:08 by pvong            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ ScalarConverter::~ScalarConverter(void) {
 }
 
 /* -------------------------------------------------------------------------- */
-/*                              MEMBER FUNCTIONS                              */
+/*                               UTILS FUNCTIONS                              */
 /* -------------------------------------------------------------------------- */
 
 bool isAChar(const std::string &input) {
@@ -200,6 +200,10 @@ void convertPseudoLiterals(const std::string &input) {
         std::cout << COLOR("double:", CYAN) << " " << d << std::endl;
     }
 }
+
+/* -------------------------------------------------------------------------- */
+/*                               MEMBER FUNCTION                              */
+/* -------------------------------------------------------------------------- */
 
 void ScalarConverter::convert(const std::string &input) {
 

@@ -1,24 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Data.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pvong <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/12/01 14:19:44 by pvong             #+#    #+#             */
-/*   Updated: 2023/12/04 16:51:47 by pvong            ###   ########.fr       */
+/*   Created: 2023/12/04 16:57:51 by pvong             #+#    #+#             */
+/*   Updated: 2023/12/04 17:13:35 by pvong            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ScalarConverter.hpp"
+#ifndef DATA_HPP
+# define DATA_HPP
 
-int main(int argc, char *argv[]) {
-    if (argc != 2) {
-        std::cout << "Usage: " << argv[0] << " <literal>" << std::endl;
-        return 1;
-    }
+class Data {
+    
+public:
+    Data(void);
+    ~Data(void);
 
-    ScalarConverter::convert(argv[1]);
+    int getValue(void) const;
 
-    return 0;
-}
+private:
+    int _value;
+    Data(const Data &src);
+    Data &operator=(const Data &other);
+};
+
+#endif
