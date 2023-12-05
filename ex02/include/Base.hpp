@@ -6,7 +6,7 @@
 /*   By: pvong <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/04 17:24:42 by pvong             #+#    #+#             */
-/*   Updated: 2023/12/04 17:27:47 by pvong            ###   ########.fr       */
+/*   Updated: 2023/12/05 13:40:31 by pvong            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,16 +50,15 @@
 class Base {
 
 public:
-    virtual ~Base(void);
-
-    Base *generate(void);
-    void identify(Base *p);
-    void identify(Base &p);
-    
+    virtual ~Base(void);    
 };
 
 class A : public Base {};
 class B : public Base {};
 class C : public Base {};
+
+Base *generate(void);
+void identify(Base *p);
+void identify(Base &p);
 
 #endif

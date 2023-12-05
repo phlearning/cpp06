@@ -6,7 +6,7 @@
 #    By: pvong <marvin@42lausanne.ch>               +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/12/01 15:07:06 by pvong             #+#    #+#              #
-#    Updated: 2023/12/04 17:28:09 by pvong            ###   ########.fr        #
+#    Updated: 2023/12/05 13:07:31 by pvong            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,7 +29,7 @@ SRC_DIR = src
 OBJ_DIR = obj
 
 SRC = main.cpp \
-
+		Base.cpp
 
 SRC := $(addprefix $(SRC_DIR)/, $(SRC))
 OBJ := $(patsubst $(SRC_DIR)/%.cpp, $(OBJ_DIR)/%.o, $(SRC))
