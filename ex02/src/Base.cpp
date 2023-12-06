@@ -6,7 +6,7 @@
 /*   By: pvong <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/05 12:46:00 by pvong             #+#    #+#             */
-/*   Updated: 2023/12/05 13:50:34 by pvong            ###   ########.fr       */
+/*   Updated: 2023/12/05 14:17:07 by pvong            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,21 +47,21 @@ void identify(Base &p) {
     std::cout << "Identify by reference: ";
     // try catch dynamic cast on each since we cannot use pointer in this function
     try {
-        (void) dynamic_cast<A &>(p);
+        (void)dynamic_cast<A &>(p);
         std::cout << COLOR("A", CYAN) << std::endl;
-    } catch(const std::bad_cast& e) {
+    } catch (const std::bad_cast &e) {
         // empty
     }
     try {
-        (void) dynamic_cast<B &>(p);
+        (void)dynamic_cast<B &>(p);
         std::cout << COLOR("B", CYAN) << std::endl;
-    } catch(const std::bad_cast& e) {
+    } catch (const std::bad_cast &e) {
         // empty
     }
     try {
-        (void) dynamic_cast<C &>(p);
+        (void)dynamic_cast<C &>(p);
         std::cout << COLOR("C", CYAN) << std::endl;
-    } catch(const std::bad_cast& e) {
+    } catch (const std::bad_cast &e) {
         // empty
     }
 }

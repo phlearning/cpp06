@@ -6,12 +6,12 @@
 /*   By: pvong <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/04 17:24:42 by pvong             #+#    #+#             */
-/*   Updated: 2023/12/05 13:40:31 by pvong            ###   ########.fr       */
+/*   Updated: 2023/12/05 14:16:43 by pvong            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef BASE_HPP
-# define BASE_HPP
+#define BASE_HPP
 
 #include <iostream>
 
@@ -50,7 +50,7 @@
 class Base {
 
 public:
-    virtual ~Base(void);    
+    virtual ~Base(void);
 };
 
 class A : public Base {};

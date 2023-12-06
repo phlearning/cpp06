@@ -6,7 +6,7 @@
 /*   By: pvong <marvin@42lausanne.ch>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/01 14:01:02 by pvong             #+#    #+#             */
-/*   Updated: 2023/12/04 16:37:30 by pvong            ###   ########.fr       */
+/*   Updated: 2023/12/06 11:42:27 by pvong            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,7 +61,7 @@ private:
     ScalarConverter(void);
     ScalarConverter(const ScalarConverter &src);
     ScalarConverter &operator=(const ScalarConverter &other);
-    void convertToChar(const std::string &strToConvert);
+
 };
 
 #endif
